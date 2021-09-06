@@ -39,12 +39,17 @@ const go = () => {
       aria-label="What's your name?"
       type="text"
       autocomplete="false"
-      p="x-4 y-2"
-      w="250px"
-      text="center"
-      bg="transparent"
-      border="~ rounded gray-200 dark:gray-700"
-      outline="none active:none"
+      class="
+        w-[250px]
+        px-4
+        py-2
+        text-center
+        bg-transparent
+        border border-gray-200
+        dark:border-gray-700
+        rounded
+        outline-none active:outline-none
+      "
       @keydown.enter="go"
     />
     <label class="hidden" for="input">What's your name?</label>
