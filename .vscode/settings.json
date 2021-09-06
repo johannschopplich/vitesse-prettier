@@ -5,6 +5,7 @@
   "vetur.validation.style": false,
   "volar.tsPluginStatus": false,
   "volar.codeLens.pugTools": false,
+  "iconify.inplace": false,
   "markdownlint.config": {
     "MD033": false,
     "MD041": false
