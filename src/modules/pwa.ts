@@ -1,5 +1,6 @@
-import { UserModule } from '~/types'
+import type { UserModule } from '~/types'
 
+// https://vite-plugin-pwa.netlify.app
 export const install: UserModule = ({ isClient, router }) => {
   if (!isClient) return
 
