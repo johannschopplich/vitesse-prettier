@@ -3,13 +3,13 @@ import { isDark, toggleDark } from '~/logic'
 </script>
 
 <template>
-  <nav class="text-xl mt-6">
-    <router-link class="icon-btn mx-2" to="/" title="Home">
+  <nav class="mt-6 text-xl">
+    <router-link class="mx-2 icon-btn" to="/" title="Home">
       <carbon-campsite />
     </router-link>
 
     <button
-      class="icon-btn mx-2 !outline-none"
+      class="mx-2 icon-btn !outline-none"
       title="Toggle dark mode"
       @click="toggleDark()"
     >
@@ -17,12 +17,12 @@ import { isDark, toggleDark } from '~/logic'
       <carbon-sun v-else />
     </button>
 
-    <router-link class="icon-btn mx-2" to="/about" title="About">
+    <router-link class="mx-2 icon-btn" to="/about" title="About">
       <carbon-dicom-overlay />
     </router-link>
 
     <a
-      class="icon-btn mx-2"
+      class="mx-2 icon-btn"
       rel="noreferrer"
       href="https://github.com/antfu/vitesse"
       target="_blank"

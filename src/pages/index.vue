@@ -40,15 +40,15 @@ const go = () => {
       type="text"
       autocomplete="false"
       class="
-        w-[250px]
-        px-4
-        py-2
-        text-center
         bg-transparent
-        border border-gray-200
-        dark:border-gray-700
+        border
         rounded
-        outline-none active:outline-none
+        outline-none
+        border-gray-200
+        text-center py-2
+        px-4
+        w-[250px]
+        dark:border-gray-700 active:outline-none
       "
       @keydown.enter="go"
     />
