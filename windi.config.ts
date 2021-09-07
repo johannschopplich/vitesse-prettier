@@ -13,13 +13,16 @@ export default defineConfig({
             maxWidth: '65ch',
             color: 'inherit',
             a: {
-              color: 'inherit',
-              opacity: 0.75,
-              fontWeight: '500',
-              textDecoration: 'underline',
+              color: colors.teal[600],
+              textDecorationLine: 'none',
+              textDecorationStyle: 'solid',
+              textDecorationColor: 'currentcolor',
+              textDecorationThickness: 'auto',
+              textDecorationSkipInk: 'auto',
+              textUnderlineOffset: '0.2em',
               '&:hover': {
-                opacity: 1,
-                color: colors.teal[600]
+                color: colors.teal[600],
+                textDecorationLine: 'underline'
               }
             },
             b: { color: 'inherit' },
