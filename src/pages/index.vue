@@ -17,45 +17,41 @@ const go = () => {
     <p class="text-4xl">
       <carbon-campsite class="inline-block" />
     </p>
-    <p>
-      <a
-        rel="noreferrer"
-        href="https://github.com/antfu/vitesse"
-        target="_blank"
-      >
-        Vitesse
-      </a>
+    <p class="text-xl">
+      Vitesse
     </p>
-    <p>
-      <em class="text-sm opacity-75">Opinionated Vite Starter Template</em>
+    <p class="text-sm opacity-75">
+      Opinionated Vite Starter Template
     </p>
 
     <div class="py-4" />
 
-    <input
-      id="input"
-      v-model="name"
-      placeholder="What's your name?"
-      aria-label="What's your name?"
-      type="text"
-      autocomplete="false"
-      class="
-        bg-transparent
-        border
-        rounded
-        outline-none
-        border-gray-200
-        text-center py-2
-        px-4
-        w-[250px]
-        dark:border-gray-700 active:outline-none
-      "
-      @keydown.enter="go"
-    />
-    <label class="hidden" for="input">What's your name?</label>
-
-    <div>
-      <button class="m-3 text-sm btn" :disabled="!name" @click="go">Go</button>
+    <div class="flex flex-wrap gap-2">
+      <label for="input" hidden>What's your name?</label>
+      <input
+        id="input"
+        v-model="name"
+        placeholder="What's your name?"
+        aria-label="What's your name?"
+        type="text"
+        autocomplete="false"
+        class="
+          bg-transparent
+          border
+          rounded
+          outline-none
+          border-gray-200
+          w-full max-w-[250px]
+          py-2
+          px-3
+          dark:border-gray-600 active:outline-none
+        "
+        @keydown.enter="go"
+      />
+  
+      <div>
+        <button class="btn" :disabled="!name" @click="go">Go</button>
+      </div>      
     </div>
   </div>
 </template>

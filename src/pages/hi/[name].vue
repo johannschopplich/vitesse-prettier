@@ -17,12 +17,12 @@ watchEffect(() => {
     <p class="text-4xl">
       <carbon-pedestrian class="inline-block" />
     </p>
-    <p>
+    <p class="text-xl">
       Hi, {{ props.name }}!
     </p>
 
-    <p class="text-sm opacity-50">
-      <em>Demo of dynamic route</em>
+    <p class="text-sm opacity-75">
+      Demo of a dynamic route
     </p>
 
     <template v-if="user.otherNames.length">
@@ -38,13 +38,13 @@ watchEffect(() => {
       </p>
     </template>
 
-    <div>
-      <button
-        class="m-3 mt-6 text-sm btn"
-        @click="router.back()"
-      >
-        Back
-      </button>
-    </div>
+    <div class="py-4" />
+
+    <button
+      class="btn"
+      @click="router.back()"
+    >
+      Back
+    </button>
   </div>
 </template>

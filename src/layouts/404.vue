@@ -4,15 +4,16 @@ const router = useRouter()
 </script>
 
 <template>
-  <main class="text-center py-10 px-4 text-teal-700 dark:text-gray-200">
-    <div>
-      <p class="text-4xl">
-        <carbon-warning class="inline-block" />
-      </p>
-    </div>
+  <Header />
+  <div class="box">
     <router-view />
-    <div>
-      <button class="m-3 mt-8 text-sm btn" @click="router.back()">Back</button>
-    </div>
-  </main>
+
+    <div class="py-4" />
+
+    <button class="btn" @click="router.back()">Back</button>
+  </div>
+  <Footer />
+  <div class="mx-auto mt-4 text-center text-sm opacity-40">
+    [404 Layout]
+  </div>
 </template>

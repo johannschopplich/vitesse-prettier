@@ -2,10 +2,10 @@
 title: About
 ---
 
-<div class="text-center">
+<div>
   <!-- You can use Vue components inside markdown -->
-  <carbon-dicom-overlay class="m-auto -mb-6 text-4xl" />
-  <h3>About</h3>
+  <carbon-dicom-overlay class="m-auto -mb-8 text-4xl" />
+  <h2 class="!font-normal !text-xl">About</h2>
 </div>
 
 [Vitesse](https://github.com/antfu/vitesse) is an opinionated [Vite](https://github.com/vitejs/vite) starter template made by [@antfu](https://github.com/antfu) for mocking apps swiftly. With **file-based routing**, **components auto importing**, **markdown support**, PWA and uses **WindiCSS** for UI.

@@ -7,11 +7,13 @@ import { useHead } from '@vueuse/head'
 useHead({
   title: 'Vitesse',
   meta: [
-    { name: 'description', content: 'Opinionated Vite Starter Template' },
-  ],
+    { name: 'description', content: 'Opinionated Vite Starter Template' }
+  ]
 })
 </script>
 
 <template>
-  <router-view />
+  <main class="mx-auto max-w-screen-md py-4 px-4 text-gray-700 dark:text-gray-200">
+    <router-view />
+  </main>
 </template>

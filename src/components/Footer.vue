@@ -3,13 +3,9 @@ import { isDark, toggleDark } from '~/logic'
 </script>
 
 <template>
-  <nav class="mt-6 text-xl">
-    <router-link class="mx-2 icon-btn" to="/" title="Home">
-      <carbon-campsite />
-    </router-link>
-
+  <nav class="box text-xl">
     <button
-      class="mx-2 icon-btn !outline-none"
+      class="mr-4 icon-btn icon-transition !outline-none"
       title="Toggle dark mode"
       @click="toggleDark()"
     >
@@ -17,14 +13,10 @@ import { isDark, toggleDark } from '~/logic'
       <carbon-sun v-else />
     </button>
 
-    <router-link class="mx-2 icon-btn" to="/about" title="About">
-      <carbon-dicom-overlay />
-    </router-link>
-
     <a
-      class="mx-2 icon-btn"
+      class="icon-btn icon-transition"
       rel="noreferrer"
-      href="https://github.com/antfu/vitesse"
+      href="https://github.com/johannschopplich/vitesse-prettier"
       target="_blank"
       title="GitHub"
     >

@@ -1,5 +1,6 @@
 <template>
-  <div>Not found</div>
+  <carbon-warning class="text-4xl" />
+  <h2 class="text-xl">Not Found</h2>
 </template>
 
 <route lang="yaml">
