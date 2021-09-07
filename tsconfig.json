@@ -3,10 +3,9 @@
     "baseUrl": ".",
     "module": "esnext",
     "target": "esnext",
-    "lib": ["DOM", "ESNext"],
+    "lib": ["esnext", "dom"],
     "strict": true,
     "esModuleInterop": true,
-    "incremental": false,
     "skipLibCheck": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -21,5 +20,6 @@
       "~/*": ["src/*"]
     }
   },
+  "include": ["src", "vite.config.ts"],
   "exclude": ["dist", "node_modules"]
 }
