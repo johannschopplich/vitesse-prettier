@@ -7,7 +7,8 @@
     "preview-https": "serve dist",
     "lint": "eslint \"src/**/*.{ts,vue}\"",
     "lint:fix": "npm run lint -- --fix",
-    "format": "prettier --write \"src/**/*.{ts,vue}\""
+    "format": "prettier --write \"src/**/*.{ts,vue}\"",
+    "prepublishOnly": "tsc --noEmit && npm run build"
   },
   "dependencies": {
     "@vueuse/core": "^6.2.1",
