@@ -2,7 +2,6 @@ lockfileVersion: 5.3
 
 specifiers:
   '@iconify/json': ^1.1.399
-  '@types/markdown-it-link-attributes': ^3.0.1
   '@typescript-eslint/eslint-plugin': ^4.31.0
   '@typescript-eslint/parser': ^4.31.0
   '@vitejs/plugin-vue': ^1.6.1
@@ -15,10 +14,11 @@ specifiers:
   eslint-config-prettier: ^8.3.0
   eslint-plugin-vue: ^7.17.0
   https-localhost: ^4.7.0
-  markdown-it-link-attributes: ^3.0.0
+  markdown-it-anchor: ^8.3.0
   pinia: ^2.0.0-rc.8
   pnpm: ^6.14.7
   prettier: ^2.3.2
+  slugify: ^1.6.0
   typescript: ^4.4.2
   unplugin-icons: ^0.7.6
   unplugin-vue-components: ^0.15.0
@@ -41,7 +41,6 @@ dependencies:
 
 devDependencies:
   '@iconify/json': 1.1.399
-  '@types/markdown-it-link-attributes': 3.0.1
   '@typescript-eslint/eslint-plugin': 4.31.0_a690ff3776b01e92cf0b93501bb5ae6a
   '@typescript-eslint/parser': 4.31.0_eslint@7.32.0+typescript@4.4.2
   '@vitejs/plugin-vue': 1.6.1_@vue+compiler-sfc@3.2.10
@@ -52,9 +51,10 @@ devDependencies:
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   eslint-plugin-vue: 7.17.0_eslint@7.32.0
   https-localhost: 4.7.0
-  markdown-it-link-attributes: 3.0.0
+  markdown-it-anchor: 8.3.0
   pnpm: 6.14.7
   prettier: 2.3.2
+  slugify: 1.6.0
   typescript: 4.4.2
   unplugin-icons: 0.7.6_8778aa393f2231eb411cf3b016af5770
   unplugin-vue-components: 0.15.0_vite@2.5.5+vue@3.2.10
@@ -1342,28 +1342,6 @@ packages:
 
   /@types/json-schema/7.0.9:
     resolution: {integrity: sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==}
-    dev: true
-
-  /@types/linkify-it/3.0.2:
-    resolution: {integrity: sha512-HZQYqbiFVWufzCwexrvh694SOim8z2d+xJl5UNamcvQFejLY/2YUtzXHYi3cHdI7PMlS8ejH2slRAOJQ32aNbA==}
-    dev: true
-
-  /@types/markdown-it-link-attributes/3.0.1:
-    resolution: {integrity: sha512-K8RnNb1q8j7rDOJbMF7AnlhCC/45BjrQ8z3WZWOrvkBIl8u9RXvmBdG/hfpnmK1JhhEZcmFEKWt+ilW1Mly+2Q==}
-    dependencies:
-      '@types/markdown-it': 12.2.1
-    dev: true
-
-  /@types/markdown-it/12.2.1:
-    resolution: {integrity: sha512-iij+ilRX/vxtUPCREjn74xzHo/RorHJDwOsJ6X+TgKw7zSvazhVXnDfwlTnyLOMdiVUjtRYU4CrcUZ7Aci4PmQ==}
-    dependencies:
-      '@types/linkify-it': 3.0.2
-      '@types/mdurl': 1.0.2
-      highlight.js: 10.7.3
-    dev: true
-
-  /@types/mdurl/1.0.2:
-    resolution: {integrity: sha512-eC4U9MlIcu2q0KQmXszyn5Akca/0jrQmwDRgpAMJai7qBWq4amIQhZyNau4VYGtCeALvW1/NtjzJJ567aZxfKA==}
     dev: true
 
   /@types/node/16.7.13:
@@ -2968,10 +2946,6 @@ packages:
     hasBin: true
     dev: true
 
-  /highlight.js/10.7.3:
-    resolution: {integrity: sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A==}
-    dev: true
-
   /hosted-git-info/2.8.9:
     resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
     dev: true
@@ -3576,8 +3550,10 @@ packages:
       sourcemap-codec: 1.4.8
     dev: true
 
-  /markdown-it-link-attributes/3.0.0:
-    resolution: {integrity: sha512-B34ySxVeo6MuEGSPCWyIYryuXINOvngNZL87Mp7YYfKIf6DcD837+lXA8mo6EBbauKsnGz22ZH0zsbOiQRWTNg==}
+  /markdown-it-anchor/8.3.0:
+    resolution: {integrity: sha512-YXMxKqZDH/MM/sFBZe+JQ/XFa7i8mIWZYkcY7jCGmpNNqcj2iS9Wyxy5devkUoL14NJOUt5IleD99D8StAwkXg==}
+    peerDependencies:
+      markdown-it: '*'
     dev: true
 
   /markdown-it/12.2.0:
@@ -4422,6 +4398,11 @@ packages:
       ansi-styles: 4.3.0
       astral-regex: 2.0.0
       is-fullwidth-code-point: 3.0.0
+    dev: true
+
+  /slugify/1.6.0:
+    resolution: {integrity: sha512-FkMq+MQc5hzYgM86nLuHI98Acwi3p4wX+a5BO9Hhw4JdK4L7WueIiZ4tXEobImPqBz2sVcV0+Mu3GRB30IGang==}
+    engines: {node: '>=8.0.0'}
     dev: true
 
   /source-map-js/0.6.2:

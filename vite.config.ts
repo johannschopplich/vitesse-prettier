@@ -9,7 +9,8 @@ import Components from 'unplugin-vue-components/vite'
 import Markdown from 'vite-plugin-md'
 import WindiCSS from 'vite-plugin-windicss'
 import { VitePWA } from 'vite-plugin-pwa'
-import LinkAttributes from 'markdown-it-link-attributes'
+import MarkdownItAnchor from 'markdown-it-anchor'
+import slugify from 'slugify'
 
 const markdownWrapperClasses = 'prose'
 
@@ -66,12 +67,8 @@ export default defineConfig({
       wrapperClasses: markdownWrapperClasses,
       headEnabled: true,
       markdownItSetup(md) {
-        md.use(LinkAttributes, {
-          pattern: /^https?:\/\//,
-          attrs: {
-            target: '_blank',
-            rel: 'noopener'
-          }
+        md.use(MarkdownItAnchor, {
+          slugify: (s: string) => slugify(s)
         })
       }
     }),
