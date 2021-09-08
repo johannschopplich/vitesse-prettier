@@ -10,6 +10,10 @@ main > *:not(:last-child) {
   @apply mb-4;
 }
 
+.accessible-focus {
+  @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500;
+}
+
 .btn {
   @apply border border-transparent rounded font-semibold bg-teal-600 flex-shrink-0 shadow-sm text-white text-base py-2 px-4 hover:bg-teal-700
     focus:outline-none focus:ring-offset-white focus:ring-2 focus:ring-teal-500 focus:ring-offset-2
@@ -18,7 +22,7 @@ main > *:not(:last-child) {
 }
 
 .icon-inline {
-  @apply inline-block select-none w-[1em] h-[1em];
+  @apply h-[1em] w-[1em] inline-block select-none;
   font-size: inherit;
   color: inherit;
   vertical-align: -0.125em;
