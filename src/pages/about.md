@@ -4,7 +4,7 @@ title: About
 
 <div>
   <!-- You can use Vue components inside markdown -->
-  <carbon-dicom-overlay class="m-auto -mb-8 text-4xl" />
+  <carbon-dicom-overlay class="-mb-10 text-4xl" />
   <h2 class="!font-normal !text-xl">About</h2>
 </div>
 
