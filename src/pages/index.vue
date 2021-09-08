@@ -17,16 +17,12 @@ const go = () => {
     <p class="text-4xl">
       <carbon-campsite class="inline-block" />
     </p>
-    <p class="text-xl">
-      Vitesse
-    </p>
-    <p class="text-sm opacity-75">
-      Opinionated Vite Starter Template
-    </p>
+    <p class="text-xl">Vitesse</p>
+    <p class="text-sm opacity-75">Opinionated Vite Starter Template</p>
 
     <div class="py-4" />
 
-    <div class="flex flex-wrap gap-2">
+    <form class="flex max-w-sm space-x-3 w-full">
       <label for="input" hidden>What's your name?</label>
       <input
         id="input"
@@ -36,23 +32,30 @@ const go = () => {
         type="text"
         autocomplete="false"
         class="
-          bg-transparent
+          bg-white
           border
           rounded
-          outline-none
           border-gray-200
-          w-full max-w-[250px]
+          flex-1
+          shadow-sm
+          text-base
+          w-full
           py-2
-          px-3
-          dark:border-gray-600 active:outline-none
+          px-4
+          placeholder-gray-400
+          appearance-none
+          dark:bg-gray-800 dark:border-gray-600
+          focus:border-transparent
+          focus:outline-none
+          focus:ring-2
+          focus:ring-teal-600
+          dark:focus:border-transparent
         "
         @keydown.enter="go"
       />
-  
-      <div>
-        <button class="btn" :disabled="!name" @click="go">Go</button>
-      </div>      
-    </div>
+
+      <button class="btn" :disabled="!name" @click.prevent="go">Go</button>
+    </form>
   </div>
 </template>
 
