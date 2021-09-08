@@ -1,8 +1,8 @@
 html {
-  @apply bg-teal-600;
+  @apply bg-teal-600 text-gray-800;
 
   &.dark {
-    @apply bg-gray-900;
+    @apply bg-gray-900 text-white;
   }
 }
 
@@ -17,10 +17,12 @@ main > *:not(:last-child) {
     dark:focus:ring-offset-gray-900;
 }
 
-.icon-btn {
-  @apply cursor-pointer leading-tight opacity-75
-    inline-block align-middle select-none
-    hover:opacity-100 hover:text-teal-600;
+.icon-inline {
+  @apply inline-block select-none w-[1em] h-[1em];
+  font-size: inherit;
+  color: inherit;
+  vertical-align: -0.125em;
+  fill: currentColor;
 }
 
 .icon-transition {

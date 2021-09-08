@@ -3,9 +3,9 @@ import { isDark, toggleDark } from '~/logic'
 </script>
 
 <template>
-  <nav class="box text-xl">
+  <nav class="text-xl box">
     <button
-      class="mr-4 icon-btn icon-transition !outline-none"
+      class="cursor-pointer mr-4 icon-inline icon-transition !outline-none"
       title="Toggle dark mode"
       @click="toggleDark()"
     >
@@ -14,7 +14,7 @@ import { isDark, toggleDark } from '~/logic'
     </button>
 
     <a
-      class="icon-btn icon-transition"
+      class="cursor-pointer icon-inline icon-transition"
       rel="noreferrer"
       href="https://github.com/johannschopplich/vitesse-prettier"
       target="_blank"

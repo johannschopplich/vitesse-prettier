@@ -23,12 +23,11 @@ const go = () => {
     <div class="py-4" />
 
     <form class="flex max-w-sm space-x-3 w-full">
-      <label for="input" hidden>What's your name?</label>
+      <label for="input" hidden>What’s your name?</label>
       <input
         id="input"
         v-model="name"
-        placeholder="What's your name?"
-        aria-label="What's your name?"
+        placeholder="What’s your name?"
         type="text"
         autocomplete="false"
         class="
