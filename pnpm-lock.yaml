@@ -14,7 +14,7 @@ specifiers:
   eslint: ^7.32.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-vue: ^7.17.0
-  https-localhost: ^4.6.5
+  https-localhost: ^4.7.0
   markdown-it-link-attributes: ^3.0.0
   pinia: ^2.0.0-rc.8
   pnpm: ^6.14.7
@@ -51,7 +51,7 @@ devDependencies:
   eslint: 7.32.0
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   eslint-plugin-vue: 7.17.0_eslint@7.32.0
-  https-localhost: 4.6.5
+  https-localhost: 4.7.0
   markdown-it-link-attributes: 3.0.0
   pnpm: 6.14.7
   prettier: 2.3.2
@@ -3043,8 +3043,8 @@ packages:
       - supports-color
     dev: true
 
-  /https-localhost/4.6.5:
-    resolution: {integrity: sha512-K62psOhUUyIgfXEoV289mMo2J7n1DB/iSx7wCCpKqIp9lRPUjHd6+BVzkNHfWKwmjjPtIA5Mga5US/wblJHrpw==}
+  /https-localhost/4.7.0:
+    resolution: {integrity: sha512-3mC4sg2gcyB0dXGipFlc3gRuEKcEflArX6gLRii9zJJDc/hlqugoTsD/7DCYarB+KbLd3DFxIr3TADEBdyj4qg==}
     hasBin: true
     dependencies:
       appdata-path: 1.0.0
