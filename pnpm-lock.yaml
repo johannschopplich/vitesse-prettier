@@ -17,7 +17,7 @@ specifiers:
   markdown-it-anchor: ^8.3.0
   pinia: ^2.0.0-rc.8
   pnpm: ^6.14.7
-  prettier: ^2.3.2
+  prettier: ^2.4.0
   slugify: ^1.6.0
   typescript: ^4.4.2
   unplugin-icons: ^0.7.6
@@ -53,7 +53,7 @@ devDependencies:
   https-localhost: 4.7.0
   markdown-it-anchor: 8.3.0
   pnpm: 6.14.7
-  prettier: 2.3.2
+  prettier: 2.4.0
   slugify: 1.6.0
   typescript: 4.4.2
   unplugin-icons: 0.7.6_5d72f6392975d02ee45d0acbc066efa3
@@ -4115,6 +4115,12 @@ packages:
 
   /prettier/2.3.2:
     resolution: {integrity: sha512-lnJzDfJ66zkMy58OL5/NY5zp70S7Nz6KqcKkXYzn2tMVrNxvbqaBpg7H3qHaLxCJ5lNMsGuM8+ohS7cZrthdLQ==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
+  /prettier/2.4.0:
+    resolution: {integrity: sha512-DsEPLY1dE5HF3BxCRBmD4uYZ+5DCbvatnolqTqcxEgKVZnL2kUfyu7b8pPQ5+hTBkdhU9SLUmK0/pHb07RE4WQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
