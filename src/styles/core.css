@@ -14,6 +14,23 @@ html {
   @apply focus-visible:ring-2 focus-visible:ring-teal-600;
 }
 
+a,
+.prose a {
+  @apply text-teal-600;
+
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-color: currentcolor;
+  text-decoration-thickness: auto;
+  text-decoration-skip-ink: auto;
+  text-underline-offset: 0.375ex;
+
+  &:hover {
+    @apply text-teal-600;
+    text-decoration-line: underline;
+  }
+}
+
 button {
   touch-action: manipulation;
 }

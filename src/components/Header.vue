@@ -14,10 +14,10 @@
 
 <style scoped>
 .header-link {
-  @apply whitespace-nowrap hover:text-teal-600;
+  @apply text-gray-800 whitespace-nowrap dark:text-white hover:text-teal-600;
 
   &.router-link-active {
-    @apply underline text-teal-600;
+    text-decoration-line: underline;
   }
 }
 </style>

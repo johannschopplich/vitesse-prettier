@@ -5,7 +5,7 @@ import { isDark, toggleDark } from '~/logic'
 <template>
   <nav class="flex flex-wrap space-x-4 box">
     <button
-      class="cursor-pointer text-2xl"
+      class="cursor-pointer text-2xl hover:text-teal-600"
       title="Toggle dark mode"
       @click="toggleDark()"
     >
@@ -14,7 +14,7 @@ import { isDark, toggleDark } from '~/logic'
     </button>
 
     <a
-      class="cursor-pointer text-2xl"
+      class="cursor-pointer text-2xl text-[currentColor]"
       rel="noreferrer"
       href="https://github.com/johannschopplich/vitesse-prettier"
       target="_blank"
