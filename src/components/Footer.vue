@@ -5,7 +5,7 @@ import { isDark, toggleDark } from '~/logic'
 <template>
   <nav class="flex flex-wrap space-x-4 box">
     <button
-      class="cursor-pointer text-2xl accessible-focus"
+      class="cursor-pointer text-2xl"
       title="Toggle dark mode"
       @click="toggleDark()"
     >

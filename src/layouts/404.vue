@@ -10,7 +10,7 @@ const router = useRouter()
 
     <div class="py-4" />
 
-    <button class="btn" @click="router.back()">Back</button>
+    <button class="button" @click="router.back()">Back</button>
   </div>
   <Footer />
   <div class="mx-auto mt-4 text-center text-sm opacity-40">

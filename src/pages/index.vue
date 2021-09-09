@@ -30,30 +30,11 @@ const go = () => {
         placeholder="What’s your name?"
         type="text"
         autocomplete="false"
-        class="
-          bg-white
-          border
-          rounded
-          border-gray-200
-          flex-1
-          shadow-sm
-          text-base
-          w-full
-          py-2
-          px-4
-          placeholder-gray-400
-          appearance-none
-          dark:bg-gray-800 dark:border-gray-600
-          focus:border-transparent
-          focus:outline-none
-          focus:ring-2
-          focus:ring-teal-600
-          dark:focus:border-transparent
-        "
+        class="input flex-1"
         @keydown.enter="go"
       />
 
-      <button class="btn" :disabled="!name" @click.prevent="go">Go</button>
+      <button class="button" :disabled="!name" @click.prevent="go">Go</button>
     </form>
   </div>
 </template>

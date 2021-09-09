@@ -41,7 +41,7 @@ watchEffect(() => {
     <div class="py-4" />
 
     <button
-      class="btn"
+      class="button"
       @click="router.back()"
     >
       Back
