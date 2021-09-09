@@ -8,6 +8,6 @@ title: About
   <h2 class="!font-normal !text-xl">About</h2>
 </div>
 
-[Vitesse Prettier](https://github.com/johannschopplich/vitesse-prettier) is an opinionated [Vite](https://github.com/vitejs/vite) starter template based on [Vitesse](https://github.com/antfu/vitesse) made by [@antfu](https://github.com/antfu). With **file-based routing**, **components auto importing**, **markdown support**, PWA and uses **WindiCSS** for UI.
+[Vitesse Prettier](https://github.com/johannschopplich/vitesse-prettier) is an opinionated [Vite](https://github.com/vitejs/vite) starter template based on [Vitesse](https://github.com/antfu/vitesse) by [@antfu](https://github.com/antfu). It includes **file-based routing**, **components auto importing**, **markdown support**, **Prettier**, PWA and uses **WindiCSS** for UI.
 
 Check out the [GitHub repo](https://github.com/antfu/vitesse) for more details.
