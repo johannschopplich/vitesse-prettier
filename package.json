@@ -11,19 +11,19 @@
     "prepublishOnly": "tsc --noEmit && npm run build"
   },
   "dependencies": {
-    "@vueuse/core": "^6.2.1",
+    "@vueuse/core": "^6.3.2",
     "@vueuse/head": "^0.6.0",
     "pinia": "^2.0.0-rc.8",
-    "vue": "^3.2.10",
+    "vue": "^3.2.11",
     "vue-router": "^4.0.11"
   },
   "devDependencies": {
     "@iconify/json": "^1.1.399",
     "@typescript-eslint/eslint-plugin": "^4.31.0",
     "@typescript-eslint/parser": "^4.31.0",
-    "@vitejs/plugin-vue": "^1.6.1",
-    "@vue/compiler-sfc": "^3.2.10",
-    "@vue/server-renderer": "^3.2.10",
+    "@vitejs/plugin-vue": "^1.6.2",
+    "@vue/compiler-sfc": "^3.2.11",
+    "@vue/server-renderer": "^3.2.11",
     "critters": "^0.0.10",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
@@ -36,7 +36,7 @@
     "typescript": "^4.4.2",
     "unplugin-icons": "^0.7.6",
     "unplugin-vue-components": "^0.15.0",
-    "vite": "^2.5.5",
+    "vite": "^2.5.6",
     "vite-plugin-md": "^0.11.0",
     "vite-plugin-pages": "^0.18.0",
     "vite-plugin-pwa": "^0.11.2",
