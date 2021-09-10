@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@iconify/json': ^1.1.399
+  '@iconify/json': ^1.1.400
   '@typescript-eslint/eslint-plugin': ^4.31.0
   '@typescript-eslint/parser': ^4.31.0
   '@vitejs/plugin-vue': ^1.6.2
@@ -40,7 +40,7 @@ dependencies:
   vue-router: 4.0.11_vue@3.2.11
 
 devDependencies:
-  '@iconify/json': 1.1.399
+  '@iconify/json': 1.1.400
   '@typescript-eslint/eslint-plugin': 4.31.0_a690ff3776b01e92cf0b93501bb5ae6a
   '@typescript-eslint/parser': 4.31.0_eslint@7.32.0+typescript@4.4.2
   '@vitejs/plugin-vue': 1.6.2_@vue+compiler-sfc@3.2.11
@@ -56,7 +56,7 @@ devDependencies:
   prettier: 2.4.0
   slugify: 1.6.0
   typescript: 4.4.2
-  unplugin-icons: 0.7.6_5d72f6392975d02ee45d0acbc066efa3
+  unplugin-icons: 0.7.6_ab88f3ed6cd34af3ce86467cf77018e8
   unplugin-vue-components: 0.15.0_vite@2.5.6+vue@3.2.11
   vite: 2.5.6
   vite-plugin-md: 0.11.0_vite@2.5.6
@@ -1233,8 +1233,8 @@ packages:
     resolution: {integrity: sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==}
     dev: true
 
-  /@iconify/json/1.1.399:
-    resolution: {integrity: sha512-PcmegNfMCisVGAe9x60Pt0SR1LAOFUlBL3pSQuO+DzlDmTXIbVhI5/5jWk0vEZMPdoNEawy/1FY8AWWOD7nx4w==}
+  /@iconify/json/1.1.400:
+    resolution: {integrity: sha512-O6roK4lDFtaxKsqeul1iBFc92kiBxfpPQjRkgLFI+EshvQuNx3e8iUDnfqe0Fu7GWaFT2TeERBkrF76pjYy+nw==}
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
@@ -4962,7 +4962,7 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /unplugin-icons/0.7.6_5d72f6392975d02ee45d0acbc066efa3:
+  /unplugin-icons/0.7.6_ab88f3ed6cd34af3ce86467cf77018e8:
     resolution: {integrity: sha512-P9Uvto2ImdIYovkk13YBkr/o5GRyYsjaVerrcP2AnAewqxcEh20IB71ZkTWog9ywTnGgv0sfeIlOQplbbaCzbw==}
     peerDependencies:
       '@iconify/json': '*'
@@ -4980,7 +4980,7 @@ packages:
       vue-template-es2015-compiler:
         optional: true
     dependencies:
-      '@iconify/json': 1.1.399
+      '@iconify/json': 1.1.400
       '@iconify/json-tools': 1.0.10
       '@vue/compiler-sfc': 3.2.11
       has-pkg: 0.0.1
