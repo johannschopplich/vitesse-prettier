@@ -1,25 +1,24 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "module": "esnext",
     "target": "esnext",
     "lib": ["esnext", "dom"],
-    "strict": true,
+    "module": "esnext",
     "moduleResolution": "node",
-    "skipLibCheck": true,
-    "incremental": false,
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "noUnusedLocals": true,
-    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    },
     "types": [
       "vite/client",
       "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client"
     ],
-    "paths": {
-      "~/*": ["src/*"]
-    }
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true
   },
   "include": ["src", "vite.config.ts"],
   "exclude": ["dist", "node_modules"]
