@@ -2,13 +2,12 @@
   "private": true,
   "scripts": {
     "dev": "vite --port 3333 --open",
-    "build": "NODE_ENV=production vite-ssg build",
+    "build": "vue-tsc --noEmit && NODE_ENV=production vite-ssg build",
     "preview": "vite preview",
     "preview-https": "serve dist",
     "lint": "eslint \"src/**/*.{ts,vue}\"",
     "lint:fix": "npm run lint -- --fix",
-    "format": "prettier --write \"src/**/*.{ts,vue}\"",
-    "prepublishOnly": "tsc --noEmit && npm run build"
+    "format": "prettier --write \"src/**/*.{ts,vue}\""
   },
   "dependencies": {
     "@vueuse/core": "^6.3.3",
@@ -18,7 +17,7 @@
     "vue-router": "^4.0.11"
   },
   "devDependencies": {
-    "@iconify/json": "^1.1.400",
+    "@iconify/json": "^1.1.401",
     "@typescript-eslint/eslint-plugin": "^4.31.0",
     "@typescript-eslint/parser": "^4.31.0",
     "@vitejs/plugin-vue": "^1.6.2",
@@ -34,7 +33,7 @@
     "prettier": "^2.4.0",
     "slugify": "^1.6.0",
     "typescript": "^4.4.3",
-    "unplugin-icons": "^0.8.1",
+    "unplugin-icons": "^0.9.0",
     "unplugin-vue-components": "^0.15.0",
     "vite": "^2.5.6",
     "vite-plugin-md": "^0.11.0",
@@ -42,6 +41,7 @@
     "vite-plugin-pwa": "^0.11.2",
     "vite-plugin-vue-layouts": "^0.4.1",
     "vite-plugin-windicss": "^1.4.2",
-    "vite-ssg": "^0.15.1"
+    "vite-ssg": "^0.15.1",
+    "vue-tsc": "^0.3.0"
   }
 }
