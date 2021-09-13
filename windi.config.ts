@@ -10,7 +10,6 @@ export default defineConfig({
         DEFAULT: {
           css: {
             color: 'inherit',
-            '[class~="lead"]': 'inherit',
             strong: { color: 'inherit' },
             h1: { color: 'inherit' },
             h2: { color: 'inherit' },
