@@ -12,8 +12,6 @@ import { VitePWA } from 'vite-plugin-pwa'
 import MarkdownItAnchor from 'markdown-it-anchor'
 import slugify from 'slugify'
 
-const markdownWrapperClasses = 'prose'
-
 export default defineConfig({
   resolve: {
     alias: {
@@ -58,13 +56,11 @@ export default defineConfig({
     Icons(),
 
     // https://github.com/antfu/vite-plugin-windicss
-    WindiCSS({
-      safelist: markdownWrapperClasses
-    }),
+    WindiCSS(),
 
     // https://github.com/antfu/vite-plugin-md
     Markdown({
-      wrapperClasses: markdownWrapperClasses,
+      wrapperClasses: 'prose',
       headEnabled: true,
       markdownItSetup(md) {
         md.use(MarkdownItAnchor, {
