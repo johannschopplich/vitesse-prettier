@@ -1,4 +1,6 @@
-# Vitesse
+# Vitesse Prettier
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/johannschopplich/vitesse-prettier)
 
 This is a opiniated variation of [Vitesse](https://github.com/antfu/vitesse), dropping some features and cleaning the boilerplate for my use-case.
 
@@ -27,8 +29,6 @@ Most notable changes include:
 - 🦔 Critical CSS via [critters](https://github.com/GoogleChromeLabs/critters)
 - 🦾 TypeScript, of course
 - ☁️ Deploy on Netlify with zero configuration
-
-<br>
 
 ## Pre-packed
 
