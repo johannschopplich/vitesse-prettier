@@ -1,9 +1,10 @@
 {
   "recommendations": [
-    "johnsoncodehk.volar",
     "dbaeumer.vscode-eslint",
-    "voorjaar.windicss-intellisense",
+    "esbenp.prettier-vscode",
+    "johnsoncodehk.volar",
     "csstools.postcss",
+    "voorjaar.windicss-intellisense",
     "antfu.iconify"
   ]
 }
