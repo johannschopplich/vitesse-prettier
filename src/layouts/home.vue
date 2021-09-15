@@ -3,6 +3,5 @@
   <div class="box">
     <router-view />
   </div>
-  <Footer />
-  <div class="mx-auto mt-4 text-center text-sm opacity-40">[Home Layout]</div>
+  <Footer layout="Home" />
 </template>

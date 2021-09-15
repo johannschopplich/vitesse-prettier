@@ -12,8 +12,5 @@ const router = useRouter()
 
     <button class="button" @click="router.back()">Back</button>
   </div>
-  <Footer />
-  <div class="mx-auto mt-4 text-center text-sm opacity-40">
-    [404 Layout]
-  </div>
+  <Footer layout="404" />
 </template>

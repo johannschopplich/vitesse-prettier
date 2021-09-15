@@ -18,6 +18,7 @@ export default defineConfig({
       '~/': `${path.resolve(__dirname, 'src')}/`
     }
   },
+
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/]

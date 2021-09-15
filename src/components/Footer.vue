@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { isDark, toggleDark } from '~/logic'
+
+const props = defineProps<{ layout?: string }>()
 </script>
 
 <template>
@@ -14,7 +16,7 @@ import { isDark, toggleDark } from '~/logic'
     </button>
 
     <a
-      class="cursor-pointer text-2xl text-[currentColor]"
+      class="cursor-pointer text-[currentColor] text-2xl"
       rel="noreferrer"
       href="https://github.com/johannschopplich/vitesse-prettier"
       target="_blank"
@@ -23,4 +25,8 @@ import { isDark, toggleDark } from '~/logic'
       <carbon-logo-github class="icon-inline icon-transition" />
     </a>
   </nav>
+
+  <div class="mx-auto mt-4 text-center text-sm dark:opacity-20">
+    [{{ props.layout ?? 'Default' }} Layout]
+  </div>
 </template>
