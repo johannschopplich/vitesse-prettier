@@ -10,4 +10,4 @@ title: About
 
 [Vitesse Prettier](https://github.com/johannschopplich/vitesse-prettier) is an opinionated [Vite](https://github.com/vitejs/vite) starter template based on [Vitesse](https://github.com/antfu/vitesse) by [@antfu](https://github.com/antfu). It includes **file-based routing**, **components auto importing**, **markdown support**, **Prettier**, PWA and uses **WindiCSS** for UI.
 
-Check out the [GitHub repo](https://github.com/antfu/vitesse) for more details.
+Check out the [GitHub repo](https://github.com/johannschopplich/vitesse-prettier) for more details.
