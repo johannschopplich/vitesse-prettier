@@ -37,7 +37,7 @@ export default defineConfig({
       // allow auto load markdown components under `./src/components/`
       extensions: ['vue', 'md'],
 
-      dts: true,
+      dts: 'src/components.d.ts',
 
       // allow auto import and register components used in markdown
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
@@ -113,7 +113,7 @@ export default defineConfig({
   },
 
   optimizeDeps: {
-    include: ['vue', 'vue-router', '@vueuse/core', 'pinia'],
+    include: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head', 'pinia'],
     exclude: ['vue-demi']
   }
 })
