@@ -54,7 +54,7 @@ export default defineConfig({
     }),
 
     // https://github.com/antfu/unplugin-icons
-    Icons(),
+    Icons({ autoInstall: true }),
 
     // https://github.com/antfu/vite-plugin-windicss
     WindiCSS(),
