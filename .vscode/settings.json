@@ -6,9 +6,5 @@
     "*.css": "postcss"
   },
   "iconify.inplace": false,
-  "vetur.validation.template": false,
-  "vetur.validation.script": false,
-  "vetur.validation.style": false,
-  "volar.tsPluginStatus": false,
   "volar.codeLens.pugTools": false
 }
