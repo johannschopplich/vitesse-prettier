@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import { useRouter } from 'vue-router'
-const router = useRouter()
-</script>
-
 <template>
   <Header />
   <div class="box">
@@ -14,3 +9,8 @@ const router = useRouter()
   </div>
   <Footer layout="404" />
 </template>
+
+<script setup lang="ts">
+import { useRouter } from 'vue-router'
+const router = useRouter()
+</script>

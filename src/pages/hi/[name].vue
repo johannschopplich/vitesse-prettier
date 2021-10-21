@@ -1,17 +1,3 @@
-<script setup lang="ts">
-import { watchEffect } from 'vue'
-import { useRouter } from 'vue-router'
-import { useUserStore } from '~/stores/user'
-
-const props = defineProps<{ name: string }>()
-const router = useRouter()
-const user = useUserStore()
-
-watchEffect(() => {
-  user.setNewName(props.name)
-})
-</script>
-
 <template>
   <div>
     <p class="text-4xl">
@@ -48,3 +34,17 @@ watchEffect(() => {
     </button>
   </div>
 </template>
+
+<script setup lang="ts">
+import { watchEffect } from 'vue'
+import { useRouter } from 'vue-router'
+import { useUserStore } from '~/stores/user'
+
+const props = defineProps<{ name: string }>()
+const router = useRouter()
+const user = useUserStore()
+
+watchEffect(() => {
+  user.setNewName(props.name)
+})
+</script>
