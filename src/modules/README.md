@@ -1,6 +1,6 @@
-## Modules
+# Modules
 
-A custom user module system. Place a `.ts` file with the following template, it will be installed automatically.
+A custom user module system. Every `.ts` file inside this folder following the template below will be installed automatically
 
 ```ts
 import type { UserModule } from '~/types'

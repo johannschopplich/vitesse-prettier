@@ -34,7 +34,7 @@ export default defineConfig({
 
     // https://github.com/antfu/unplugin-vue-components
     Components({
-      // allow auto load markdown components under `./src/components/`
+      // allow auto load of markdown components from `./src/components/`
       extensions: ['vue', 'md'],
 
       dts: 'src/components.d.ts',
@@ -44,10 +44,9 @@ export default defineConfig({
 
       // custom resolvers
       resolvers: [
-        // auto import icons
         // https://github.com/antfu/unplugin-icons
         IconsResolver({
-          componentPrefix: ''
+          prefix: ''
           // enabledCollections: ['carbon']
         })
       ]
