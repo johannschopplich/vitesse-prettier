@@ -1,7 +1,7 @@
 <template>
   <div>
     <p class="text-4xl">
-      <carbon-campsite class="inline-block" />
+      <carbon-sailboat-offshore class="inline-block" />
     </p>
     <p class="text-xl">Vitesse</p>
     <p class="text-sm opacity-75">Opinionated Vite Starter Template</p>
