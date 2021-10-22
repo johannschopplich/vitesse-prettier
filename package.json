@@ -14,8 +14,8 @@
     "@vueuse/core": "^6.7.3",
     "@vueuse/head": "^0.6.0",
     "pinia": "^2.0.0-rc.14",
-    "vue": "^3.2.19",
-    "vue-router": "^4.0.11"
+    "vue": "^3.2.20",
+    "vue-router": "^4.0.12"
   },
   "devDependencies": {
     "@iconify/json": "^1.1.418",
@@ -24,7 +24,7 @@
     "@vitejs/plugin-vue": "^1.9.3",
     "@vue/compiler-sfc": "^3.2.20",
     "@vue/server-renderer": "^3.2.20",
-    "critters": "^0.0.12",
+    "critters": "^0.0.13",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-vue": "^7.20.0",
