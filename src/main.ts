@@ -1,8 +1,8 @@
-// register vue composition api globally
 import { ViteSSG } from 'vite-ssg'
 import generatedRoutes from 'virtual:generated-pages'
 import { setupLayouts } from 'virtual:generated-layouts'
 import App from './App.vue'
+import type { RouterScrollBehavior } from 'vue-router'
 
 // windicss layers
 import 'virtual:windi-base.css'
@@ -15,11 +15,12 @@ import 'virtual:windi-utilities.css'
 import 'virtual:windi-devtools'
 
 const routes = setupLayouts(generatedRoutes)
+const scrollBehavior: RouterScrollBehavior = (to, from, savedPosition) =>
+  savedPosition ?? { top: 0 }
 
 // https://github.com/antfu/vite-ssg
-export const createApp = ViteSSG(App, { routes }, (ctx) => {
+export const createApp = ViteSSG(App, { routes, scrollBehavior }, (ctx) => {
   // install all modules from `modules/`
-
   for (const m of Object.values(import.meta.globEager('./modules/*.ts'))) {
     m.install?.(ctx)
   }
