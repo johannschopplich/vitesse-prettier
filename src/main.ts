@@ -14,7 +14,11 @@ import 'virtual:windi-utilities.css'
 // windicss devtools support (dev only)
 import 'virtual:windi-devtools'
 
-const routes = setupLayouts(generatedRoutes)
+const routes = setupLayouts(generatedRoutes).map((i) => ({
+  ...i,
+  alias: i.path.endsWith('/') ? `${i.path}index.html` : `${i.path}.html`
+}))
+
 const scrollBehavior: RouterScrollBehavior = (to, from, savedPosition) =>
   savedPosition ?? { top: 0 }
 
