@@ -1,5 +1,6 @@
 <template>
   <div
+    v-if="offlineReady || needRefresh"
     class="
       bg-white
       rounded
