@@ -46,14 +46,14 @@ export default defineConfig({
       resolvers: [
         // https://github.com/antfu/unplugin-icons
         IconsResolver({
-          prefix: ''
+          prefix: false
           // enabledCollections: ['carbon']
         })
       ]
     }),
 
     // https://github.com/antfu/unplugin-icons
-    Icons({ autoInstall: true }),
+    Icons(),
 
     // https://github.com/antfu/vite-plugin-windicss
     WindiCSS(),
