@@ -1,9 +1,3 @@
-<script setup lang="ts">
-import { isDark, toggleDark } from '~/logic'
-
-const props = defineProps<{ layout?: string }>()
-</script>
-
 <template>
   <nav class="flex flex-wrap space-x-4 box">
     <button
@@ -30,3 +24,9 @@ const props = defineProps<{ layout?: string }>()
     [{{ props.layout ?? 'Default' }} Layout]
   </div>
 </template>
+
+<script setup lang="ts">
+import { isDark, toggleDark } from '~/logic'
+
+const props = defineProps<{ layout?: string }>()
+</script>
