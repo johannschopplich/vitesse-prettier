@@ -27,7 +27,7 @@
       >
         Reload
       </button>
-      <button class="py-1 px-3 button" @click="close">Close</button>
+      <button v-else class="py-1 px-3 button" @click="close">Close</button>
     </div>
   </div>
 </template>
