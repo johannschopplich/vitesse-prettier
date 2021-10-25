@@ -18,14 +18,17 @@
       <span v-if="offlineReady">App is ready to work offline.</span>
       <span v-else>New content available, reload to update.</span>
     </div>
-    <button
-      v-if="needRefresh"
-      class="py-1 px-3 button"
-      @click="updateServiceWorker()"
-    >
-      Reload
-    </button>
-    <button class="py-1 px-3 button" @click="close">Close</button>
+
+    <div class="space-x-2">
+      <button
+        v-if="needRefresh"
+        class="py-1 px-3 button"
+        @click="updateServiceWorker()"
+      >
+        Reload
+      </button>
+      <button class="py-1 px-3 button" @click="close">Close</button>
+    </div>
   </div>
 </template>
 
