@@ -3,9 +3,9 @@
     <router-view />
   </main>
 
-  <ClientOnly>
+  <client-only>
     <ReloadPrompt />
-  </ClientOnly>
+  </client-only>
 </template>
 
 <script setup lang="ts">
