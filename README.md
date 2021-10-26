@@ -90,7 +90,7 @@ To build the app, run:
 pnpm build
 ```
 
-And you will see the generated file in `dist`, ready to be served.
+The generated files will be put into `dist`, ready to be served.
 
 ### Deploy on Netlify
 
@@ -98,4 +98,4 @@ Visit [Netlify](https://app.netlify.com/start) and select your clone, hit `OK` a
 
 ## Credits
 
-[@antfu](https://github.com/antfu) for all of his hard work and contributions to the community, including Vitesse of course.
+[@antfu](https://github.com/antfu) for all of his incredible work and contributions to the community, including Vitesse of course, which this repository is forked from.
