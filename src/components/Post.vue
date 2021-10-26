@@ -23,14 +23,15 @@ const navigate = () => {
 }
 
 if (isClient) {
-  useEventListener(window, 'hashchange', navigate, false)
+  useEventListener(window, 'hashchange', navigate)
 
   onMounted(() => {
-    for (const anchor of document.querySelectorAll('a[href^="#"]')) {
+    for (const anchor of document.querySelectorAll<HTMLAnchorElement>(
+      'a[href^="#"]'
+    )) {
       anchor.addEventListener('click', (evt) => {
         evt.preventDefault()
-        const href = anchor.getAttribute('href') as string
-        history.replaceState({}, '', href)
+        window.history.replaceState({}, '', anchor.href)
         navigate()
       })
     }
