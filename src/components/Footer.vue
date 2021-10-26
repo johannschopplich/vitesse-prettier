@@ -19,14 +19,8 @@
       <carbon-logo-github class="icon-inline icon-transition" />
     </a>
   </nav>
-
-  <div class="mx-auto mt-4 text-center text-sm dark:opacity-20">
-    [{{ props.layout ?? 'Default' }} Layout]
-  </div>
 </template>
 
 <script setup lang="ts">
 import { isDark, toggleDark } from '~/logic'
-
-const props = defineProps<{ layout?: string }>()
 </script>

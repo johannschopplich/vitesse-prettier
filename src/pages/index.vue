@@ -1,9 +1,7 @@
 <template>
   <div>
-    <p class="text-4xl">
-      <carbon-sailboat-offshore class="inline-block" />
-    </p>
-    <p class="text-xl">Vitesse</p>
+    <carbon-sailboat-offshore class="text-4xl inline-block" />
+    <h2 class="text-xl">Vitesse</h2>
     <p class="text-sm opacity-75">Opinionated Vite Starter Template</p>
 
     <div class="py-4" />
@@ -16,7 +14,7 @@
         placeholder="What’s your name?"
         type="text"
         autocomplete="false"
-        class="input flex-1"
+        class="flex-1 input"
         @keydown.enter="go"
       />
 
@@ -38,8 +36,3 @@ const go = () => {
   if (name.value) router.push(`/hi/${encodeURIComponent(name.value)}`)
 }
 </script>
-
-<route lang="yaml">
-meta:
-  layout: home
-</route>

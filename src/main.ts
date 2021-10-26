@@ -1,6 +1,5 @@
 import { ViteSSG } from 'vite-ssg'
 import generatedRoutes from 'virtual:generated-pages'
-import { setupLayouts } from 'virtual:generated-layouts'
 import App from './App.vue'
 import type { RouterScrollBehavior } from 'vue-router'
 
@@ -14,9 +13,9 @@ import 'virtual:windi-utilities.css'
 // windicss devtools support (dev only)
 import 'virtual:windi-devtools'
 
-const routes = setupLayouts(generatedRoutes).map((i) => ({
+const routes = generatedRoutes.map((i) => ({
   ...i,
-  alias: i.path.endsWith('/') ? `${i.path}index.html` : `${i.path}.html`
+  alias: i.path.endsWith('/') ? `${i.path}index.html` : `${i.path}.html`,
 }))
 
 const scrollBehavior: RouterScrollBehavior = (to, from, savedPosition) =>

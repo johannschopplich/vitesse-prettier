@@ -19,7 +19,6 @@ Most notable changes include:
 - 🗂 [File-based routing](./src/pages)
 - 📦 [Components auto importing](./src/components)
 - 🍍 [State management via Pinia](https://pinia.esm.dev/)
-- 📑 [Layout system](./src/layouts)
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
 - 🎨 [Windi CSS](https://github.com/windicss/windicss) – Next generation utility-first CSS framework
 - 😃 [Use icons from any icon sets, with no compromise](https://github.com/antfu/unplugin-icons)
@@ -46,7 +45,6 @@ Most notable changes include:
 
 - [Vue Router](https://github.com/vuejs/vue-router)
   - [`vite-plugin-pages`](https://github.com/hannoeru/vite-plugin-pages) – File system based routing
-  - [`vite-plugin-vue-layouts`](https://github.com/JohnCampionJr/vite-plugin-vue-layouts) – Layouts for pages
 - [Pinia](https://pinia.esm.dev) – Intuitive, type safe, light and flexible Store for Vue using the composition api
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) – Components auto import
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) – PWA
@@ -78,11 +76,11 @@ Most notable changes include:
 
 ### Development
 
-Just run and visit [localhost:3333](http://localhost:3333):
-
 ```bash
 pnpm dev
 ```
+
+Afterwards, visit [localhost:3333](http://localhost:3333):
 
 ### Build
 

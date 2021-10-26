@@ -8,9 +8,10 @@
     "lint": "eslint \"src/**/*.{ts,vue}\"",
     "lint:fix": "npm run lint -- --fix",
     "typecheck": "vue-tsc --noEmit",
-    "format": "prettier --write \"src/**/*.{ts,vue}\""
+    "format": "prettier --write \"src/**/*.{css,html,json,md,ts,vue,yml}\""
   },
   "dependencies": {
+    "@types/node": "^16.11.6",
     "@vueuse/core": "^6.7.3",
     "@vueuse/head": "^0.6.0",
     "pinia": "^2.0.0-rc.15",
@@ -43,7 +44,7 @@
     "vite-plugin-vue-layouts": "^0.5.0",
     "vite-plugin-windicss": "^1.4.12",
     "vite-ssg": "^0.15.5",
-    "vue-tsc": "^0.28.8",
+    "vue-tsc": "^0.28.9",
     "windicss": "^3.1.9"
   }
 }

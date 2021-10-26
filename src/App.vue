@@ -1,6 +1,12 @@
 <template>
   <main class="mx-auto max-w-screen-md py-4 px-4">
-    <router-view />
+    <Header />
+
+    <div class="box">
+      <router-view />
+    </div>
+
+    <Footer />
   </main>
 
   <client-only>
@@ -16,6 +22,6 @@ import { useHead } from '@vueuse/head'
 // they will be rendered correctly in the html results with vite-ssg
 useHead({
   title: 'Vitesse',
-  meta: [{ name: 'description', content: 'Opinionated Vite Starter Template' }]
+  meta: [{ name: 'description', content: 'Opinionated Vite Starter Template' }],
 })
 </script>

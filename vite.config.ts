@@ -2,7 +2,6 @@ import path from 'path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
-import Layouts from 'vite-plugin-vue-layouts'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
@@ -15,28 +14,23 @@ import slugify from 'slugify'
 export default defineConfig({
   resolve: {
     alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`
-    }
+      '~/': `${path.resolve(__dirname, 'src')}/`,
+    },
   },
 
   plugins: [
     Vue({
-      include: [/\.vue$/, /\.md$/]
+      include: [/\.vue$/, /\.md$/],
     }),
 
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
-      extensions: ['vue', 'md']
+      extensions: ['vue', 'md'],
     }),
-
-    // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
-    Layouts(),
 
     // https://github.com/antfu/unplugin-vue-components
     Components({
-      // allow auto load of markdown components from `./src/components/`
       extensions: ['vue', 'md'],
-
       dts: 'src/components.d.ts',
 
       // allow auto import and register components used in markdown
@@ -45,11 +39,8 @@ export default defineConfig({
       // custom resolvers
       resolvers: [
         // https://github.com/antfu/unplugin-icons
-        IconsResolver({
-          prefix: false
-          // enabledCollections: ['carbon']
-        })
-      ]
+        IconsResolver({ prefix: false }),
+      ],
     }),
 
     // https://github.com/antfu/unplugin-icons
@@ -60,13 +51,15 @@ export default defineConfig({
 
     // https://github.com/antfu/vite-plugin-md
     Markdown({
+      wrapperComponent: 'post',
       wrapperClasses: 'prose',
       headEnabled: true,
+
       markdownItSetup(md) {
         md.use(MarkdownItAnchor, {
-          slugify: (s: string) => slugify(s)
+          slugify: (s: string) => slugify(s),
         })
-      }
+      },
     }),
 
     // https://github.com/antfu/vite-plugin-pwa
@@ -81,37 +74,37 @@ export default defineConfig({
           {
             src: '/pwa-192x192.png',
             sizes: '192x192',
-            type: 'image/png'
-          },
-          {
-            src: '/pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png'
+            type: 'image/png',
           },
           {
             src: '/pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
-            purpose: 'any maskable'
-          }
-        ]
-      }
-    })
+          },
+          {
+            src: '/pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
+          },
+        ],
+      },
+    }),
   ],
 
   server: {
     fs: {
-      strict: true
-    }
+      strict: true,
+    },
   },
 
   // https://github.com/antfu/vite-ssg
   ssgOptions: {
-    formatting: 'minify'
+    formatting: 'minify',
   },
 
   optimizeDeps: {
     include: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head', 'pinia'],
-    exclude: ['vue-demi']
-  }
+    exclude: ['vue-demi'],
+  },
 })

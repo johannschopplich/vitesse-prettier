@@ -1,19 +1,12 @@
 <template>
   <div>
-    <p class="text-4xl">
-      <carbon-pedestrian class="inline-block" />
-    </p>
-    <p class="text-xl">
-      Hi, {{ props.name }}!
-    </p>
-
-    <p class="text-sm opacity-75">
-      Demo of a dynamic route
-    </p>
+    <carbon-pedestrian class="text-4xl inline-block" />
+    <h2 class="text-xl">Hi, {{ props.name }}!</h2>
+    <p class="text-sm opacity-75">Demo of a dynamic route</p>
 
     <template v-if="user.otherNames.length">
-      <p class="mt-4 text-sm">
-        <span class="opacity-75">Also known as:</span>
+      <div class="mt-4 text-sm">
+        <p class="opacity-75">Also known as:</p>
         <ul>
           <li v-for="n in user.otherNames" :key="n">
             <router-link :to="`/hi/${n}`" replace>
@@ -21,17 +14,12 @@
             </router-link>
           </li>
         </ul>
-      </p>
+      </div>
     </template>
 
     <div class="py-4" />
 
-    <button
-      class="button"
-      @click="router.back()"
-    >
-      Back
-    </button>
+    <button class="button" @click="router.back()">Back</button>
   </div>
 </template>
 
