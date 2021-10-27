@@ -67,10 +67,10 @@ Most notable changes include:
   - [critters](https://github.com/GoogleChromeLabs/critters) – Critical CSS
 - [Netlify](https://www.netlify.com/) – Zero-config deployment
 - [VS Code Extensions](./.vscode/extensions.json)
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) – Vue 3 `<script setup>` IDE support
   - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) – Icon inline display and autocomplete
   - [Windi CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense) – IDE support for Windi CSS
-  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ## Usage
 
