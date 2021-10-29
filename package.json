@@ -11,9 +11,9 @@
     "format": "prettier --write \"src/**/*.{css,html,json,md,ts,vue,yml}\""
   },
   "dependencies": {
-    "@vueuse/core": "^6.7.3",
+    "@vueuse/core": "^6.7.4",
     "@vueuse/head": "^0.6.0",
-    "pinia": "^2.0.0-rc.15",
+    "pinia": "^2.0.0",
     "vue": "^3.2.20",
     "vue-router": "^4.0.12"
   },
@@ -28,7 +28,7 @@
     "critters": "^0.0.14",
     "eslint": "^8.1.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-vue": "^7.20.0",
+    "eslint-plugin-vue": "^8.0.1",
     "https-localhost": "^4.7.0",
     "markdown-it-anchor": "^8.4.1",
     "pnpm": "^6.19.1",
@@ -38,13 +38,13 @@
     "unplugin-icons": "^0.12.17",
     "unplugin-vue-components": "^0.16.0",
     "vite": "^2.6.13",
-    "vite-plugin-md": "^0.11.2",
-    "vite-plugin-pages": "^0.18.1",
+    "vite-plugin-md": "^0.11.4",
+    "vite-plugin-pages": "^0.18.2",
     "vite-plugin-pwa": "^0.11.3",
     "vite-plugin-vue-layouts": "^0.5.0",
     "vite-plugin-windicss": "^1.4.12",
-    "vite-ssg": "^0.15.5",
-    "vue-tsc": "^0.28.9",
-    "windicss": "^3.1.9"
+    "vite-ssg": "^0.15.6",
+    "vue-tsc": "^0.28.10",
+    "windicss": "^3.2.0"
   }
 }
