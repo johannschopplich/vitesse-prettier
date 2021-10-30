@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@iconify/json': ^1.1.420
+  '@iconify/json': ^1.1.421
   '@types/node': ^16.11.6
   '@typescript-eslint/eslint-plugin': ^5.2.0
   '@typescript-eslint/parser': ^5.2.0
@@ -13,7 +13,7 @@ specifiers:
   critters: ^0.0.14
   eslint: ^8.1.0
   eslint-config-prettier: ^8.3.0
-  eslint-plugin-vue: ^8.0.1
+  eslint-plugin-vue: ^8.0.3
   https-localhost: ^4.7.0
   markdown-it-anchor: ^8.4.1
   pinia: ^2.0.0
@@ -22,7 +22,7 @@ specifiers:
   slugify: ^1.6.1
   typescript: ^4.4.4
   unplugin-icons: ^0.12.17
-  unplugin-vue-components: ^0.16.0
+  unplugin-vue-components: ^0.17.0
   vite: ^2.6.13
   vite-plugin-md: ^0.11.4
   vite-plugin-pages: ^0.18.2
@@ -43,7 +43,7 @@ dependencies:
   vue-router: 4.0.12_vue@3.2.20
 
 devDependencies:
-  '@iconify/json': 1.1.420
+  '@iconify/json': 1.1.421
   '@types/node': 16.11.6
   '@typescript-eslint/eslint-plugin': 5.2.0_9a56ca1c5fc1d82b3da3317a5c6f9ab1
   '@typescript-eslint/parser': 5.2.0_eslint@8.1.0+typescript@4.4.4
@@ -53,7 +53,7 @@ devDependencies:
   critters: 0.0.14
   eslint: 8.1.0
   eslint-config-prettier: 8.3.0_eslint@8.1.0
-  eslint-plugin-vue: 8.0.1_eslint@8.1.0
+  eslint-plugin-vue: 8.0.3_eslint@8.1.0
   https-localhost: 4.7.0
   markdown-it-anchor: 8.4.1
   pnpm: 6.19.1
@@ -61,7 +61,7 @@ devDependencies:
   slugify: 1.6.1
   typescript: 4.4.4
   unplugin-icons: 0.12.17_8d243728697ba143b290806bcef1890d
-  unplugin-vue-components: 0.16.0_vite@2.6.13+vue@3.2.20
+  unplugin-vue-components: 0.17.0_vite@2.6.13+vue@3.2.20
   vite: 2.6.13
   vite-plugin-md: 0.11.4_vite@2.6.13
   vite-plugin-pages: 0.18.2_8d243728697ba143b290806bcef1890d
@@ -1248,8 +1248,8 @@ packages:
     resolution: {integrity: sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==}
     dev: true
 
-  /@iconify/json/1.1.420:
-    resolution: {integrity: sha512-HhGzbp/3dY8RlSbmKbgx9yGSDdiS/YNrE9RzjjDIu8tOutTeGD2R2OrDVnm8HlRHWU5u/VYaKcG0LLQO/e6vaQ==}
+  /@iconify/json/1.1.421:
+    resolution: {integrity: sha512-nCxWszt2AjVsG/REoAhFue4aiJniZmjx8M2MAS/SCSHQUGoxKcFTg5NeyfDW1tQiKJ0R8AmbEb0Zum8ljybZNA==}
     dev: true
 
   /@iconify/types/1.0.10:
@@ -2669,8 +2669,8 @@ packages:
       eslint: 8.1.0
     dev: true
 
-  /eslint-plugin-vue/8.0.1_eslint@8.1.0:
-    resolution: {integrity: sha512-h7SJFNECfkx89CeH3VCGGhLcm4VLOsOZ+DUSGk0h/aCqm9Outm/sIkoOvNpCebsb0U+uBzb93v2yZ6k7Vzy6LQ==}
+  /eslint-plugin-vue/8.0.3_eslint@8.1.0:
+    resolution: {integrity: sha512-Rlhhy5ltzde0sRwSkqHuNePTXLMMaJ5+qsQubM4RYloYsQ8cXlnJT5MDaCzSirkGADipOHtmQXIbbPFAzUrADg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
@@ -2679,7 +2679,7 @@ packages:
       eslint-utils: 3.0.0_eslint@8.1.0
       natural-compare: 1.4.0
       semver: 7.3.5
-      vue-eslint-parser: 8.0.0_eslint@8.1.0
+      vue-eslint-parser: 8.0.1_eslint@8.1.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4952,11 +4952,18 @@ packages:
       - webpack
     dev: true
 
-  /unplugin-vue-components/0.16.0_vite@2.6.13+vue@3.2.20:
-    resolution: {integrity: sha512-BM/5p6/btLgDjUxf290cKbzbaGow95NFibhp+TSQhL0wyb1Q6sP0nmlqOvGnpLANFq0+urXxXDloMLlTJH6Fww==}
+  /unplugin-vue-components/0.17.0_vite@2.6.13+vue@3.2.20:
+    resolution: {integrity: sha512-KMh+5z9L256l2z1zpoy/9xhLjrpBvYyaEVgckC0sF6mLspTAB5tPJ4aOhpI+zB8Tu8owLqiw4DoOoMHFgYbQNQ==}
     engines: {node: '>=14'}
     peerDependencies:
+      '@babel/parser': ^7.15.8
+      '@babel/traverse': ^7.15.4
       vue: 2 || 3
+    peerDependenciesMeta:
+      '@babel/parser':
+        optional: true
+      '@babel/traverse':
+        optional: true
     dependencies:
       '@antfu/utils': 0.3.0
       '@rollup/pluginutils': 4.1.1
@@ -5311,8 +5318,8 @@ packages:
       vue: 3.2.20
     dev: false
 
-  /vue-eslint-parser/8.0.0_eslint@8.1.0:
-    resolution: {integrity: sha512-YxN5bkPDji+XLQ4sx+ULLxckL+y/oS3xzgFRkcjJL2asfVcRhzbrNRwMtWgj/70fXsrr+hkFjkxze8PBZ5O3ug==}
+  /vue-eslint-parser/8.0.1_eslint@8.1.0:
+    resolution: {integrity: sha512-lhWjDXJhe3UZw2uu3ztX51SJAPGPey1Tff2RK3TyZURwbuI4vximQLzz4nQfCv8CZq4xx7uIiogHMMoSJPr33A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
