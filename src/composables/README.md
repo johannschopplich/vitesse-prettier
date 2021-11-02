@@ -5,11 +5,11 @@
 For example, instead of importing like:
 
 ```ts
-import { isDark } from '../../../../logic'
+import { isDark } from '../../../../composables'
 ```
 
 You can use:
 
 ```ts
-import { isDark } from '~/logic'
+import { isDark } from '~/composables'
 ```
