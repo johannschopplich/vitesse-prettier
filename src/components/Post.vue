@@ -54,7 +54,7 @@ if (isClient) {
       event.preventDefault()
       const { hash, pathname: path } = url
       if (hash && !path) {
-        window.history.replaceState({}, '', hash)
+        window.history.replaceState({}, '', link.href)
         navigate()
       } else {
         router.push({ path, hash })

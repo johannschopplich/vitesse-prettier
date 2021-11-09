@@ -92,12 +92,6 @@ export default defineConfig({
     }),
   ],
 
-  server: {
-    fs: {
-      strict: true,
-    },
-  },
-
   // https://github.com/antfu/vite-ssg
   ssgOptions: {
     formatting: 'minify',
