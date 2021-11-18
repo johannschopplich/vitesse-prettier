@@ -102,6 +102,6 @@ Visit [Netlify](https://app.netlify.com/start) and select your clone, hit `OK` a
 
 ## License
 
-[MIT](https://github.com/antfu/vitesse/blob/main/LICENSE) License © 2021 [Anthony Fu](https://github.com/antfu)
+[MIT](./LICENSE) License © 2021 [Anthony Fu](https://github.com/antfu)
 
 [MIT](./LICENSE) License © 2021 [Johann Schopplich](https://github.com/johannschopplich)
