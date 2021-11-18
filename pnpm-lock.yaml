@@ -6,7 +6,6 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.4.0
   '@typescript-eslint/parser': ^5.4.0
   '@vitejs/plugin-vue': ^1.9.4
-  '@vue/server-renderer': ^3.2.22
   '@vueuse/core': ^6.9.1
   '@vueuse/head': ^0.7.2
   critters: ^0.0.14
@@ -47,7 +46,6 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.4.0_d6f2571581882eb2d6c9d9867e002185
   '@typescript-eslint/parser': 5.4.0_eslint@8.2.0+typescript@4.5.2
   '@vitejs/plugin-vue': 1.9.4_vite@2.6.14
-  '@vue/server-renderer': 3.2.22_vue@3.2.22
   critters: 0.0.14
   eslint: 8.2.0
   eslint-config-prettier: 8.3.0_eslint@8.2.0
@@ -1645,6 +1643,7 @@ packages:
     dependencies:
       '@vue/compiler-dom': 3.2.22
       '@vue/shared': 3.2.22
+    dev: false
 
   /@vue/devtools-api/6.0.0-beta.19:
     resolution: {integrity: sha512-ObzQhgkoVeoyKv+e8+tB/jQBL2smtk/NmC9OmFK8UqdDpoOdv/Kf9pyDWL+IFyM7qLD2C75rszJujvGSPSpGlw==}
@@ -1709,6 +1708,7 @@ packages:
       '@vue/compiler-ssr': 3.2.22
       '@vue/shared': 3.2.22
       vue: 3.2.22
+    dev: false
 
   /@vue/shared/3.2.21:
     resolution: {integrity: sha512-5EQmIPK6gw4UVYUbM959B0uPsJ58+xoMESCZs3N89XyvJ9e+fX4pqEPrOGV8OroIk3SbEvJcC+eYc8BH9JQrHA==}

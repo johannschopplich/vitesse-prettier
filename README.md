@@ -99,3 +99,9 @@ Visit [Netlify](https://app.netlify.com/start) and select your clone, hit `OK` a
 ## Credits
 
 [@antfu](https://github.com/antfu) for all of his incredible work and contributions to the community, including Vitesse of course, which this repository is forked from.
+
+## License
+
+[MIT](https://github.com/antfu/vitesse/blob/main/LICENSE) License © 2021 [Anthony Fu](https://github.com/antfu)
+
+[MIT](./LICENSE) License © 2021 [Johann Schopplich](https://github.com/johannschopplich)

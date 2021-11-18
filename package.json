@@ -23,7 +23,6 @@
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vitejs/plugin-vue": "^1.9.4",
-    "@vue/server-renderer": "^3.2.22",
     "critters": "^0.0.14",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.3.0",
