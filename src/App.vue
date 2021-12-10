@@ -1,5 +1,5 @@
 <template>
-  <main class="mx-auto max-w-screen-md py-4 px-4">
+  <main class="max-w-screen-md mx-auto py-4 px-4 space-y-4">
     <Header />
 
     <div class="box">

@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex flex-wrap space-x-4 box">
+  <nav class="box flex flex-wrap space-x-4">
     <button
       class="cursor-pointer text-2xl hover:text-teal-600"
       title="Toggle dark mode"
@@ -10,7 +10,7 @@
     </button>
 
     <a
-      class="cursor-pointer text-[currentColor] text-2xl"
+      class="cursor-pointer text-current text-2xl"
       rel="noreferrer"
       href="https://github.com/johannschopplich/vitesse-prettier"
       target="_blank"

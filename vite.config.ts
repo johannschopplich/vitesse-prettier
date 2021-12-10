@@ -1,4 +1,4 @@
-import path from 'path'
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
@@ -6,7 +6,7 @@ import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
 import Markdown from 'vite-plugin-md'
-import WindiCSS from 'vite-plugin-windicss'
+import UnoCSS from 'unocss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import MarkdownItAnchor from 'markdown-it-anchor'
 import slugify from 'slugify'
@@ -14,7 +14,7 @@ import slugify from 'slugify'
 export default defineConfig({
   resolve: {
     alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`,
+      '~/': `${resolve(__dirname, 'src')}/`,
     },
   },
 
@@ -46,8 +46,8 @@ export default defineConfig({
     // https://github.com/antfu/unplugin-icons
     Icons(),
 
-    // https://github.com/antfu/vite-plugin-windicss
-    WindiCSS(),
+    // https://github.com/antfu/unocss
+    UnoCSS(),
 
     // https://github.com/antfu/vite-plugin-md
     Markdown({

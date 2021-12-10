@@ -1,6 +1,6 @@
 <template>
   <div>
-    <carbon-pedestrian class="text-4xl inline-block" />
+    <carbon-pedestrian class="inline-block text-4xl" />
     <h2 class="text-xl">Hi, {{ props.name }}!</h2>
     <p class="text-sm opacity-75">Demo of a dynamic route</p>
 
@@ -17,7 +17,7 @@
       </div>
     </template>
 
-    <div class="py-4" />
+    <div class="my-4" />
 
     <button class="button" @click="router.back()">Back</button>
   </div>

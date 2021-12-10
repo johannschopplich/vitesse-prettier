@@ -1,8 +1,8 @@
 <template>
-  <carbon-help class="text-4xl inline-block" />
+  <carbon-help class="inline-block text-4xl" />
   <h2 class="text-xl">{{ props.frontmatter.title }}</h2>
 
-  <div class="py-4" />
+  <div class="my-4" />
 
   <section ref="content">
     <slot />

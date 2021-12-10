@@ -1,17 +1,7 @@
 <template>
   <div
     v-if="offlineReady || needRefresh"
-    class="
-      bg-white
-      rounded
-      shadow
-      p-4
-      right-4
-      bottom-4
-      z-10
-      fixed
-      dark:bg-gray-800
-    "
+    class="fixed right-4 bottom-4 bg-white dark:bg-gray-800 p-4 rounded shadow z-10"
     role="alert"
   >
     <div class="mb-2">
@@ -22,12 +12,12 @@
     <div class="space-x-2">
       <button
         v-if="needRefresh"
-        class="py-1 px-3 button"
+        class="button py-1 px-3"
         @click="updateServiceWorker()"
       >
         Reload
       </button>
-      <button class="py-1 px-3 button" @click="close">Close</button>
+      <button class="button py-1 px-3" @click="close">Close</button>
     </div>
   </div>
 </template>

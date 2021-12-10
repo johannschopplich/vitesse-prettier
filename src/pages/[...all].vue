@@ -1,8 +1,8 @@
 <template>
-  <carbon-warning class="text-4xl inline-block" />
+  <carbon-warning class="inline-block text-4xl" />
   <h2 class="text-xl">Not Found</h2>
 
-  <div class="py-4" />
+  <div class="my-4" />
 
   <button class="button" @click="router.back()">Back</button>
 </template>

@@ -1,17 +1,11 @@
 import { ViteSSG } from 'vite-ssg'
-import generatedRoutes from 'virtual:generated-pages'
+import generatedRoutes from '~pages'
 import App from './App.vue'
 import type { RouterScrollBehavior } from 'vue-router'
 
-// windicss layers
-import 'virtual:windi-base.css'
-import 'virtual:windi-components.css'
-// your custom styles here
+import '@unocss/reset/tailwind.css'
 import './styles/index.css'
-// windicss utilities should be the last style import
-import 'virtual:windi-utilities.css'
-// windicss devtools support (dev only)
-import 'virtual:windi-devtools'
+import 'uno.css'
 
 const routes = generatedRoutes.map((i) => ({
   ...i,

@@ -1,12 +1,12 @@
 <template>
   <div>
-    <carbon-sailboat-offshore class="text-4xl inline-block" />
+    <carbon-sailboat-offshore class="inline-block text-4xl" />
     <h2 class="text-xl">Vitesse</h2>
     <p class="text-sm opacity-75">Opinionated Vite Starter Template</p>
 
-    <div class="py-4" />
+    <div class="my-4" />
 
-    <form class="flex max-w-sm space-x-3 w-full">
+    <form class="max-w-sm w-full flex space-x-3">
       <label for="input" hidden>What’s your name?</label>
       <input
         id="input"
@@ -14,7 +14,7 @@
         placeholder="What’s your name?"
         type="text"
         autocomplete="false"
-        class="flex-1 input"
+        class="input flex-1"
         @keydown.enter="go"
       />
 

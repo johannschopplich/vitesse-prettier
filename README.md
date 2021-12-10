@@ -20,7 +20,7 @@ Most notable changes include:
 - 📦 [Components auto importing](./src/components)
 - 🍍 [State management via Pinia](https://pinia.esm.dev/)
 - 📲 [PWA](https://github.com/antfu/vite-plugin-pwa)
-- 🎨 [Windi CSS](https://github.com/windicss/windicss) – Next generation utility-first CSS framework
+- 🎨 [UnoCSS](https://github.com/antfu/unocss) – Next generation utility-first CSS framework
 - 😃 [Use icons from any icon sets, with no compromise](https://github.com/antfu/unplugin-icons)
 - 🗒 [Markdown support](https://github.com/antfu/vite-plugin-md)
 - 🔥 Use the [new `<script setup>` syntax](https://github.com/vuejs/rfcs/pull/227)
@@ -33,8 +33,8 @@ Most notable changes include:
 
 ### UI Frameworks
 
-- [Windi CSS](https://github.com/windicss/windicss) (On-demand [TailwindCSS](https://tailwindcss.com/)) – lighter and faster, with a bunch of additional features!
-  - [Windi CSS Typography](https://windicss.org/plugins/official/typography.html)
+- [UnoCSS](https://github.com/antfu/unocss) (On-demand [TailwindCSS](https://tailwindcss.com)) – lighter and faster, with a bunch of additional features!
+  - [UnoCSS Preset Typography](https://github.com/ydcjeff/unocss-preset-typography/)
 
 ### Icons
 
@@ -48,7 +48,6 @@ Most notable changes include:
 - [Pinia](https://pinia.esm.dev) – Intuitive, type safe, light and flexible Store for Vue using the composition api
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) – Components auto import
 - [`vite-plugin-pwa`](https://github.com/antfu/vite-plugin-pwa) – PWA
-- [`vite-plugin-windicss`](https://github.com/antfu/vite-plugin-windicss) – Windi CSS Integration
 - [`vite-plugin-md`](https://github.com/antfu/vite-plugin-md) – Markdown as components / components in Markdown
 - [VueUse](https://github.com/antfu/vueuse) – Collection of useful composition APIs
 - [`@vueuse/head`](https://github.com/vueuse/head) – Manipulate document head reactively
@@ -70,7 +69,6 @@ Most notable changes include:
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) – Vue 3 `<script setup>` IDE support
   - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) – Icon inline display and autocomplete
-  - [Windi CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense) – IDE support for Windi CSS
 
 ## Usage
 

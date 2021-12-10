@@ -2,17 +2,24 @@
   "compilerOptions": {
     "target": "esnext",
     "lib": ["esnext", "dom", "dom.iterable"],
+    "jsx": "preserve",
     "module": "esnext",
     "moduleResolution": "node",
     "paths": {
       "~/*": ["./src/*"]
     },
     "resolveJsonModule": true,
+    "sourceMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "noUnusedLocals": true,
     "skipLibCheck": true
   },
-  "include": ["src", "vite.config.ts"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "vite.config.ts"
+  ]
 }
