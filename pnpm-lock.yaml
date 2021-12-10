@@ -22,7 +22,7 @@ specifiers:
   unocss: ^0.16.0
   unocss-preset-typography: ^0.3.0
   unplugin-icons: ^0.12.23
-  unplugin-vue-components: ^0.17.6
+  unplugin-vue-components: ^0.17.8
   vite: ^2.7.1
   vite-plugin-md: ^0.11.4
   vite-plugin-pages: ^0.19.0-beta.8
@@ -58,7 +58,7 @@ devDependencies:
   unocss: 0.16.0
   unocss-preset-typography: 0.3.0_unocss@0.16.0
   unplugin-icons: 0.12.23_vite@2.7.1
-  unplugin-vue-components: 0.17.6_vite@2.7.1+vue@3.2.24
+  unplugin-vue-components: 0.17.8_vite@2.7.1+vue@3.2.24
   vite: 2.7.1
   vite-plugin-md: 0.11.4_vite@2.7.1
   vite-plugin-pages: 0.19.0-beta.8_vite@2.7.1
@@ -5167,8 +5167,8 @@ packages:
       - webpack
     dev: true
 
-  /unplugin-vue-components/0.17.6_vite@2.7.1+vue@3.2.24:
-    resolution: {integrity: sha512-Z2XvwKeY7/++MucRKzJihDsbdL8rFb71VfmuhtMtLE8zurjFu57XKFx0RNFUD5zD4g0HEyR9GGTwXu2YI0rang==}
+  /unplugin-vue-components/0.17.8_vite@2.7.1+vue@3.2.24:
+    resolution: {integrity: sha512-biyIE8TQwolK/ii3vu3xJ4w83+bliAgka3AuhU2cX5OOvJP+xuq39Skhf+BkNkZoY8xoeU65WHOgLFl//m3/YQ==}
     engines: {node: '>=14'}
     peerDependencies:
       '@babel/parser': ^7.15.8

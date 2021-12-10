@@ -12,7 +12,7 @@ export default defineConfig({
     button: `${control} border-transparent bg-teal-600 hover:bg-teal-700 text-white text-base font-semibold flex-shrink-0 focus:outline-none focus:ring-offset-white focus:ring-offset-2 disabled:cursor-default disabled:bg-gray-600 disabled:border-gray-600 disabled:opacity-50 dark:focus:ring-offset-gray-900`,
     input: `${control} w-full bg-white border-gray-200 placeholder-gray-400 dark:bg-gray-800 dark:border-gray-600 !focus:border-transparent`,
     'icon-inline':
-      'h-[1em] w-[1em] inline-block fill-current text-inherit -align-[0.125em] select-none',
+      'w-[1em] h-[1em] relative bottom-[0.125em]  inline-block fill-current text-inherit select-none',
     'icon-transition': 'transition ease-in-out duration-200',
   },
 })
