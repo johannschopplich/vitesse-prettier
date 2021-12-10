@@ -9,7 +9,6 @@
     <form class="max-w-sm w-full flex space-x-3">
       <label for="input" hidden>What’s your name?</label>
       <input
-        id="input"
         v-model="name"
         placeholder="What’s your name?"
         type="text"

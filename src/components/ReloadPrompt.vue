@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="offlineReady || needRefresh"
-    class="fixed right-4 bottom-4 bg-white dark:bg-gray-800 p-4 rounded shadow z-10"
+    class="fixed right-4 bottom-4 bg-white p-4 rounded shadow z-10 dark:bg-gray-800"
     role="alert"
   >
     <div class="mb-2">
